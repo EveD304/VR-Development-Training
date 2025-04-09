@@ -30,5 +30,7 @@ public class ClockTime : MonoBehaviour
         int secondsInt = int.Parse(System.DateTime.UtcNow.ToString("ss"));
         
         print(hoursInt + ":" + minutesInt + ":" + secondsInt);
+
+       // iTween.RotateTo(secondHand,iTween.Hash("z", secondsInt))
     }
 }
