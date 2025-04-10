@@ -27,9 +27,12 @@ public class ClockTime : MonoBehaviour
     {
         DateTime time = DateTime.Now;
 
-        hourHand.localRotation = Quaternion.Euler(time.Hour * degreesPerHour, 0f, 0f);
-        minuteHand.localRotation = Quaternion.Euler(time.Minute * degreesPerMinute, 0f, 0f);
-        secondHand.localRotation = Quaternion.Euler(time.Second * degreesPerSecond, 0f, 0f);
+        //hourHand.transform.localEulerAngles = new Vector3(time.Hour * 30, 0, 0);
+        secondHand.transform.localEulerAngles = new Vector3(time.Second * 6f, secondHand.transform.localEulerAngles.y, secondHand.transform.localEulerAngles.z);
+        //minuteHand.transform.localEulerAngles = new Vector3(time.Minute * 6, 0, 0);
+        //hourHand.rotation = Quaternion.Euler(time.Hour * degreesPerHour, 0f, 180f);
+        //minuteHand.rotation = Quaternion.Euler(time.Minute * degreesPerMinute, 0f, 180f);
+        //secondHand.rotation = Quaternion.Euler(time.Second * degreesPerSecond, 0f, 180f);
 
         //float hoursF = float.Parse(System.DateTime.UtcNow.ToLocalTime().ToString("hh"));
         //float minutesF = float.Parse(System.DateTime.UtcNow.ToString("mm"));
