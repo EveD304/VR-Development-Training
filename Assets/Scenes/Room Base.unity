@@ -2470,7 +2470,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hourHand: {fileID: 461380532}
   minuteHand: {fileID: 1903019791}
-  secondsHand: {fileID: 0}
+  secondsHand: {fileID: 461380529}
+--- !u!4 &461380529 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5832356130452855646, guid: 278cd79b6d0575544a70c9035c7a440e,
+    type: 3}
+  m_PrefabInstance: {fileID: 461380523}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &461380532 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5931846097522078582, guid: 278cd79b6d0575544a70c9035c7a440e,
