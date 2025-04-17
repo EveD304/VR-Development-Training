@@ -3850,13 +3850,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 525994587}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1964497851}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &526290685
 GameObject:
   m_ObjectHideFlags: 0
@@ -11791,37 +11791,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 6.1232336e-17}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &1585211567
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1585211568}
-  m_Layer: 0
-  m_Name: Attach
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1585211568
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1585211567}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4809505777395726078}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1599730946
 Transform:
   m_ObjectHideFlags: 0
@@ -14262,6 +14231,7 @@ GameObject:
   - component: {fileID: 1964497852}
   - component: {fileID: 1964497854}
   - component: {fileID: 1964497853}
+  - component: {fileID: 1964497856}
   m_Layer: 0
   m_Name: RightHand Controller
   m_TagString: Untagged
@@ -14916,6 +14886,20 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 0}
   m_ButtonPressPoint: 0.5
+--- !u!114 &1964497856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964497850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fc650ebec8a0bb4987f9eb57b41ab64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ruler: {fileID: 0}
+  clipboard: {fileID: 0}
 --- !u!1001 &1980090081
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30600,7 +30584,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6604879599737858899}
-  - {fileID: 1585211568}
   m_Father: {fileID: 663194001}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!23 &4819841694027175304
@@ -30676,7 +30659,7 @@ GameObject:
   - component: {fileID: 4844571851191685990}
   m_Layer: 0
   m_Name: Clipboard
-  m_TagString: Untagged
+  m_TagString: Clipboard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32213,7 +32196,7 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  m_AttachTransform: {fileID: 1585211568}
+  m_AttachTransform: {fileID: 0}
   m_SecondaryAttachTransform: {fileID: 0}
   m_UseDynamicAttach: 0
   m_MatchAttachPosition: 1
@@ -34103,7 +34086,7 @@ GameObject:
   - component: {fileID: 6069904500843224116}
   m_Layer: 0
   m_Name: Measuring Stick
-  m_TagString: Untagged
+  m_TagString: Ruler
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
